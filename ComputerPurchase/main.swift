@@ -96,10 +96,6 @@ for _ in 1...n {
     let ram = Int(specsSeparated[1])!
     let cpu = Int(specsSeparated[2])!
     let disk = Int(specsSeparated[3])!
-    computers.append(ComputerSpecification(computername: computerName,
-                                           ram: ram,
-                                           cpu: cpu,
-                                           disk: disk))
     let formula = (2 * ram) + (3 * cpu) + disk
     if formula > maximum {
         maximum = formula
